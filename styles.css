@@ -1,0 +1,871 @@
+@font-face {
+    font-family: 'Mont-normal';
+    src: url('/assets/fonts/mont-extralightdemo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/mont-extralightdemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-heavy';
+    src: url('/assets/fonts/mont-heavydemo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/mont-heavydemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.woff2') format('woff2'),
+         url('/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/assets/fonts/Radomir Tinkov - Gilroy-Light.woff2') format('woff2'),
+         url('/assets/fonts/Radomir Tinkov - Gilroy-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.top_bar { 
+    background: #11346F;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_bar_text { 
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.navbar_container { 
+    background-color: rgba(245, 253, 255, 0.8);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(14px);
+}
+
+.navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+    height: 52px;
+}
+
+.navbar_button { 
+    background: #197AFF;
+    border-radius: 60px;
+    font-family: 'Mont-normal';
+    font-weight: 800;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 11px 38px;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar_menu { 
+    display: none;
+}
+
+.navbar_menu_item { 
+    font-family: 'Mont-normal';
+    font-weight: 600;
+    color: #11346F;
+    opacity: 0.75;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar_item_active{ 
+    opacity: 1;
+}
+
+.menu_margin { 
+    margin-left: 60px;
+}
+
+.logo { 
+    cursor: pointer;
+}
+
+.hero_container { 
+    background-color: #FBFBFB;
+    padding-top: 13px;
+}
+
+
+.hero_title { 
+    font-family: "Mont-normal";
+    font-weight: 700;
+    color: #213786;
+    font-size: 26px;
+}
+
+.hero_title_blue { 
+    color: #197AFF;
+    font-family: "Mont-heavy";
+}
+.hero_title_right { 
+    display: flex;
+    flex-direction: column;
+}
+.hero_description { 
+    color: #262626;
+    font-family: "Mont-normal";
+    font-weight: 600;
+    line-height: 28px;
+    margin: 5px 18px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.massage { 
+    width: 174px;
+    height: 107px;
+}
+.line{ 
+    width: 97px;
+    height: 6px;
+}
+.mobile_arrow { 
+    transform: rotate(180deg);
+}
+.arrow{ 
+    display: none;
+}
+.hero_title_and_image{ 
+    display: flex;
+    margin: 0 14px 0 17px;
+    align-items: center;
+}
+.hero_title_svgs-mobile{ 
+    display: flex;
+    justify-content: space-between;
+}
+.hero-title-svgs-first{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero_icon_list{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Mont-normal;
+    font-weight: 600;
+}
+.hero_icon_list_title{ 
+    font-size: 12px;
+    color: #11346F;
+    font-family: Mont-normal;
+    text-align: center;
+    max-width: 75px;
+}
+.hero_icon_list_items{ 
+    display: none;
+}
+.hero_icon-svg{ 
+    margin-bottom: 10px;
+}
+
+.hero_icon_list_container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.vertical_line { 
+    display: none;
+}
+.hero_button_container{ 
+    text-align: center;
+    margin-top: 50px;
+}
+.hero_price{ 
+    color: #197AFF;
+}
+.hero_main_button{
+    font-family: "Mont-heavy";
+    font-weight: 600;
+    font-size: 16px;
+    background: #197AFF;
+    border-radius: 60px;
+    color: #FFFFFF;
+    padding: 21px 72px;
+    margin-bottom: 50px;
+}
+.hero_secondary_button {
+    font-family: "Mont-normal";
+    font-weight: 800;
+    font-size: 13px;
+    background: rgba(77, 145, 207, 0.15);
+    box-shadow: 0px 0px 14px #FFFFFF;
+    border-radius: 30px;
+    color: #000000;
+    padding: 10px 28px;
+}
+
+.hero_review { 
+    box-sizing: border-box;
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 110px;
+    margin: 30px 19px 0;
+    padding: 8px;
+    width: 377px;
+}
+.flex{ 
+    display: flex;
+}
+.hero_review_title { 
+    font-size: 12px;
+    font-family: "Mont-normal";
+    font-weight: 800;
+}
+.hero_review_verified{ 
+    color: #197AFF;
+    font-family: "Mont-heavy";
+    font-size: 11px;
+    margin-right: 20px;
+}
+.hero_review_customer_image{ 
+    margin-right: 10px;
+}
+.hero_review_customer{
+    font-family: "Montserrat";
+    color: #787979;
+    font-size: 12px;
+}
+.hero_review_stars{ 
+    width: 73px;
+    margin-right: 6px;
+}
+.hero_review_badge{ 
+    margin-right: 3px;
+}
+.items_center{ 
+    align-items: center;
+}
+.justify_between { 
+    justify-content: space-between;
+}
+.justify_center{ 
+    justify-content: center;
+}
+.hero_review_container{ 
+    display: flex;
+    justify-content: center;
+}
+.offers_top_line{ 
+    background: #11346F;
+    backdrop-filter: blur(2px);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.offers_top_line_text{ 
+    font-family: "Mont-normal";
+    font-size: 12px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.flex_col{ 
+    flex-direction: column;
+}
+.offers_top_line_containers{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.offers_top_line_container3{ 
+    display: none;
+}
+.offers_top_line_image{ 
+    margin: 0 0 10px 0;
+}
+.offers_main_container{ 
+    background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+}
+.offers_main_heading{ 
+    font-family: "Mont-normal";
+    font-size: 30px;
+    color: #11346F;
+}
+.offers_second_heading{ 
+    font-family: "Mont-heavy";
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.offers_headers_container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 19px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.offers_card_main_container{ 
+    width: 378px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+    opacity: 0.8;
+    border: 1.5px solid #197AFF;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27px;
+    margin-bottom: 3rem;
+}
+.offers_card_main_title{ 
+    font-family: "Gilroy-Light";
+    font-size: 24px;
+    font-weight: 600;
+    color: #11346F;
+}
+.offers_card_title_container{
+    margin: 33px 0 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.offers_card_price{ 
+    font-family: "Gilroy-Bold";
+    font-size: 25px;
+    color: #11346F;
+}
+.offers_card_afterpay_button{ 
+    background: #BCF5E3;
+    border-radius: 40px;
+    width: 77px;
+    height: 17px;
+    display: flex;
+    font-family: "Mont-heavy";
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.offers_card_afterpay_text{ 
+    font-family: "Mont-normal";
+    font-size: 11px;
+    color: #11346F;
+    font-weight: 800;
+    margin-right: 1rem;
+}
+.offers_card_afterpay_container{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.offers_card_button{ 
+    background: #197AFF;
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    border-radius: 60px;
+    font-family: "Mont-heavy";
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 13px 96px;
+}
+
+.offers_card_button_container{ 
+    margin-bottom: 25px;
+}
+.payment_methods{ 
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.offers_card_main_image{ 
+    position: relative;
+    top: -3rem;
+}
+.offers_card_badge_container{ 
+    margin: -2rem 0 -1rem;
+}
+.offers_card_badge{ 
+    font-family: "Mont-heavy";
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background: #57AC73;
+    border-radius: 50px;
+}
+.offers_card_arrow_image{ 
+    position: absolute;
+    left: 4rem;
+    top: -5rem;
+    transform: rotate(90deg);
+}
+.offers_saves_container_text_1{ 
+    background: #BFF5BE;
+    border: 1px solid #99D298;
+    border-radius: 48px;
+    color: #11346F;
+    font-family: "Gilroy-Light";
+    font-size: 12px;
+    padding: 10px 30px;
+    font-weight: 800;
+    position: relative;
+    left: 1rem;
+    z-index: 1;
+}
+.offers_saves_container_text_2{ 
+
+    border: 1px solid #197AFF;
+    border-radius: 48px;
+    color: #11346F;
+    font-family: "Gilroy-Light";
+    font-size: 12px;
+    padding: 10px 30px 10px 40px;
+    font-weight: 800;
+    position: relative;
+    right: 1rem;
+}
+.offers_saves_container_text_3{ 
+    color: #11346F;
+    font-family: "Gilroy-Light";
+    font-size: 12px;
+    font-weight: 800;
+}
+.offers_saves_container { 
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+    border: 1.5px solid #197AFF;
+    border-radius: 18px;
+    padding-bottom: 8px;
+}
+.offer_cards_container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offers_free_shipping_text{ 
+    display: none;
+}
+.price_and_shipping_container{ 
+    margin-bottom: 10px;
+}
+.mobile_cachback_container{ 
+    display: none;
+}
+.reviews_header_title_text{ 
+    font-size: 30px;
+    font-family: "Mont-normal";
+    color: #11346F;
+    text-align: center;
+    width: 24rem;
+}
+.reviews_heaeder_title{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews_reviews_count{ 
+    color: #11346F;
+    font-size: 14px;
+    font-family: "Mont-heavy";
+    margin-left: 6px;
+}
+.write_a_review{ 
+    color: #3A3075;
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    background: #F6F8FC;
+    border: 1px solid #213786;
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+.review_card_author{ 
+    color: #11346F;
+    font-size: 14px;
+    font-family: "Mont-heavy";
+    margin-bottom: 6px;
+}
+.review_author_and_stars{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.review_card_verified{ 
+    color: #89C25F;
+    font-family: "Mont-heavy";
+    font-size: 11px;
+    margin-left: 4px;
+}
+.review_card_header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.review_text{ 
+    color: #262626;
+    font-size: 13px;
+    font-family: "Mont-normal";
+    font-weight: 800;
+    line-height: 26px;
+}
+.review_cards_container{ 
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    height: 472px;
+    margin-left: 18px;
+}
+.review_card{
+    width: 285px;
+    height: 472px;
+    flex: 1 0 285px;
+    margin-right: 1rem;
+    background: #FFFFFF;
+}
+.reviews_main_container{ 
+    background: #F6F8FC;
+    padding-bottom: 15px;
+}
+.review_sliders_container{ 
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.review_sliders_inner_flex{ 
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+.reviews_bar_margins{ 
+    margin: 0 18px 18px;
+}
+.questions_main_container { 
+    background: #11346F;
+}
+
+
+.accordion {
+    background: #194081;
+    cursor: pointer;
+    padding: 20px 30px;
+    width: 70vw;
+    display: flex;
+    font-size: 15px;
+    transition: 0.4s;
+    justify-content: space-between;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+  
+.active{
+    background: #194081;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+.panel {
+    padding: 22px 30px;
+    background: #11346F;
+    display: none;
+    width: 70vw;
+    overflow: hidden;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.questions_container{ 
+    display: flex;
+    flex-direction: column;
+    padding: 40px 18px 30px;
+    align-items: center;
+}
+
+.questions_image{ 
+    width: 374px;
+    margin-bottom: 24px;
+}
+.accordion_and_pannel{ 
+    margin-bottom: 16px;
+    border: 1px solid #31548E;
+    border-radius: 9px;
+}
+.accordion_title{ 
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: "Mont-heavy";
+}
+.panel_description{ 
+    color: #AECCFF;
+    font-size: 14px;
+    font-family: "Mont-normal";
+    font-weight: 800;
+}
+.vector_up{ 
+    display: none;
+}
+
+@media screen and (min-width: 1045px) and (max-width: 1260px) {   
+    .offer_cards_container {
+        flex-direction: column !important;
+    }
+    .massage{ 
+        height: auto !important;
+        width: 300px !important;
+        top: 23rem !important;
+        right: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 1045px){ 
+    .navbar_menu{ 
+        display: flex;
+    }
+    .navbar_button{ 
+        display: block;
+    }
+    .navbar{ 
+        justify-content: space-between;
+    }
+    .hero_title { 
+        font-size: 42px;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    .hero_content { 
+        margin: 0 100px;
+    }
+    .hero_container{ 
+        padding-top: 63px;
+        height: 609px;
+    }
+    .hero_description{ 
+        width: 731px;
+        font-size: 18px;
+        text-align: left;
+        margin: 0 0 3rem;
+    }
+    .massage {
+        width: 391px;
+        height: 241px;
+        position: absolute;
+        right: 4rem;
+        top: 18rem;
+    }
+    .hero_title_and_image{ 
+        margin: 0;
+        display: block;
+    }
+    .hero_title_right { 
+        margin-left: 6px;
+    }
+    .mobile_arrow{ 
+        display: none;
+    }
+    .arrow{
+        display: block;
+    }
+    .hero_title_svgs-mobile{ 
+        display: block;
+    }
+    .line{ 
+        width: 171px;
+        height: 6px;
+    }
+    .navbar{ 
+        height: 67px;
+    }
+    .hero_icon_list_container{ 
+        width: 686px;
+        height: 152px;
+        background: rgba(174, 204, 255, 0.1);
+        border: 1px solid rgba(174, 204, 255, 0.5);
+        border-radius: 10px;
+        margin: 0 0 4rem;
+    }
+    .vertical_line {
+        height: 117px;
+        display: block;
+    }
+    .hero_icon_list_items{ 
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #262626;
+    }
+    .hero_icon_list_title{ 
+        font-family: 'Mont-heavy';
+        font-size: 14px;
+        max-width: none;
+    }
+    .display_flex{ 
+        display: flex;
+        justify-content: center;
+    }
+    .font_size_for_bullet{ 
+        font-size:25px;
+        margin-right: 3px;
+    }
+    .hero_review{ 
+        width: 393px;
+    }
+    .hero_review_container{ 
+        display: block;
+    }
+    .hero_button_container{
+        text-align: left;
+    }
+    .hero_button_container_2{
+        width: 392px;
+        text-align: center;
+    }
+    .hero_buttons_and_review{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .offers_top_line_image{ 
+        margin: 0 16px 0 0;
+    }
+    .offers_top_line{ 
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .offers_top_line_text{
+        font-size: 16px;
+    }
+    .offers_top_line_containers{
+        align-items: center;
+        flex-direction: row;
+    }
+    .offers_top_line_container3{ 
+        display: flex;
+    }
+    .offers_headers_container{ 
+        padding-top: 29px;
+    }
+    .offer_cards_container{ 
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 2rem;
+    }
+    .offers_card_main_container{ 
+        height: 500px;
+    }
+    .offers_card_main_image_1{ 
+        position: relative;
+        top: -3rem;
+    }
+    .offers_free_shipping_text{ 
+        display: block;
+        color: #11346F;
+        font-family: "Gilroy-Light";
+        font-weight: 800;
+        font-size: 13px;
+    }
+    .price_and_shipping_container{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .offers_card_main_title{ 
+        font-family: "Mont-normal";
+    }
+    .offers_saves_container_text_3{ 
+        font-family: "Mont-Heavy";
+    }
+    .offers_saves_container_text_2{ 
+        font-family: "Mont-Heavy";
+    }
+    .offers_saves_container_text_1{ 
+        font-family: "Mont-Heavy";
+    }
+    .mobile_cachback_container{ 
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .mobile_cachback_container_title{ 
+        font-family: "Gilroy-Bold";
+        font-size: 12px;
+        color: #11346F;
+        margin-left: 5px;
+    }
+    .offers_card_afterpay_container_1{ 
+        margin-bottom: 4rem;
+    }
+    .offers_saves_container_2{ 
+        margin-bottom: 40px;
+    }
+    .offers_saves_container3{ 
+        margin-bottom: 35px;
+    }
+    .rewiews_bar_and_widget{ 
+        padding: 0 7vw;
+    }
+    .review_card{
+        width: 285px;
+        height: 472px;
+        flex: revert;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .review_cards_container{ 
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        overflow: hidden;
+      }
+    .review_sliders_container{ 
+        display: none;
+    }
+    .reviews_header_title_text{ 
+        font-size: 37px;
+        width: auto;
+    }
+    .reviews_heaeder_title{ 
+        align-items: flex-end;
+    }
+    .reviews_bar_margins{ 
+        margin: 0 0 18px;
+    }
+    .questions_container{ 
+        flex-direction: row;
+        margin: 0 6vw;
+        padding: 50px 0;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .questions_image{ 
+        width: 36vw;
+        margin:0;
+    }
+    .accordion{ 
+        width: 40vw;
+    }
+    .panel{ 
+        width: 40vw;
+    }
+}
